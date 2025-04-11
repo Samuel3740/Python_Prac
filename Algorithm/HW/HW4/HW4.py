@@ -110,7 +110,7 @@ class RedBlackTree:
         self.root.color = BLACK
 
 # ---------------------------
-# 사용 예시
+# 예시
 # ---------------------------
 
 if __name__ == "__main__":
@@ -119,11 +119,11 @@ if __name__ == "__main__":
     for key in [10, 20, 30, 15, 25, 5]:
         tree.insert(key)
 
-    # 검색 예제
-    search_key = 15
+    # 검색
+    search_key = 31
     result = tree.search(search_key)
-    print(f"{search_key} {'찾음' if result else '없음'}")
+    print(f"{search_key} {'found' if result else 'not found'}")
 
-    search_key = 99
+    search_key = 71
     result = tree.search(search_key)
-    print(f"{search_key} {'찾음' if result else '없음'}")
+    print(f"{search_key} {'found' if result else 'not found'}")
